@@ -28,7 +28,7 @@ cd ..
 
 xterm -e "docker-compose up;bash" &
 
-sleep 60
+sleep 180
 
 xterm -e "docker exec -it kafka /opt/kafka_2.12-2.3.0/bin/zookeeper-server-start.sh /opt/kafka_2.12-2.3.0/config/zookeeper.properties;bash" &
 sleep 15
