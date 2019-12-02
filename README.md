@@ -80,6 +80,12 @@ This script installs what is needed for the depployment of the docker environmen
 
 It can be noticed that if we use docker for the implementation we are adding a new layer, so the hostname (localhost) is changed, so we have to indicate the correct hostname and path.
 
+### Cloud Deployment
+
+You can access to the project in the cloud by the next URL:
+
+>http://35.193.239.59:5000/flights/delays/predict_kafka
+
 ----
 
 ## References
