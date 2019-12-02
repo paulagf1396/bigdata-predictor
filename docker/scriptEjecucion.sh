@@ -36,7 +36,7 @@ xterm -e "docker exec -it kafka /opt/kafka_2.12-2.3.0/bin/kafka-server-start.sh 
 sleep 15 
 docker exec -it kafka /opt/kafka_2.12-2.3.0/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic flight_delay_classification_request
 
-docker exec -it mongo /practica/resources/import_distances.sh
+docker exec -it mongo mongoimport -d agile_data_science -c origin_dest_distances --file /practica/data/origin_dest_distances.jsonl
 
 sleep 10
 
