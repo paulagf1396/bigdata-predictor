@@ -2,6 +2,8 @@
 
 s=$(pwd)
 
+unzip practica_big_data_2019.zip
+
 sudo apt update
 sudo apt install -y xterm
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
