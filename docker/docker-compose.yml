@@ -1,0 +1,25 @@
+version: "2"
+services:
+  kafka:
+    container_name: kafka
+    image: bdfi/kafka
+    ports:
+      - "9092:9092"
+      - "2181:2181"
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./practica_big_data_2019:/practica
+  spark:
+    container_name: spark
+    image: bdfi/spark
+    volumes:
+      - ./practica_big_data_2019:/practica
+  server:
+    container_name: server
+    image: bdfi/server
+    ports:
+      - "5000:5000"
